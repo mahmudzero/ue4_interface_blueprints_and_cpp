@@ -40,7 +40,7 @@ void ALearningActorP01::BeginPlay()
 void ALearningActorP01::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	UE_LOG(LogTemp, Warning, TEXT("\nCpp: %i, CppWithStub %i\n"), CalledFromCpp(), CalledFromCppWithStub());
 }
 
 void ALearningActorP01::CalculateDPS()
@@ -48,9 +48,10 @@ void ALearningActorP01::CalculateDPS()
 	damage_per_second = total_damage / total_damage_time;
 }
 
-void ALearningActorP01::CalledFromCppWithStub_Implementation()
+int ALearningActorP01::CalledFromCppWithStub_Implementation()
 {
 	std::cout << "DEBUG: CalledFromCppWithStub_Implementation" << std::endl;
+	return -1000;
 }
 
 /**

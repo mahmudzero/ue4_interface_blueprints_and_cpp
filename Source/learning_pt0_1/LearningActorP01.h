@@ -47,11 +47,11 @@ protected:
 	 * plan on stubbing the method as described)
 	*/
 	UFUNCTION(BlueprintImplementableEvent, Category="Damage")
-	void CalledFromCpp();
+	int CalledFromCpp();
 
 	UFUNCTION(BlueprintNativeEvent, Category="Damage")
-	void CalledFromCppWithStub();
-	void CalledFromCppWithStub_Implementation();
+	int CalledFromCppWithStub();
+	int CalledFromCppWithStub_Implementation();
 
 public:
 	// Called every frame
