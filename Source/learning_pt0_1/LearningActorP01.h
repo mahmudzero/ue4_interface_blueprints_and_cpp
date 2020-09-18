@@ -45,6 +45,11 @@ protected:
 	 * the Blueprint doesnt implement the method we still get the null definition
 	 * CalleFromCpp {}... moral of the story, dont use BlueprintNative if you dont
 	 * plan on stubbing the method as described)
+	 *
+	 * It seems like the only purpose for this, is so that people who don't want to
+	 * write explicit C++ have a way to build functionality
+	 *
+	 * AKA useless
 	*/
 	UFUNCTION(BlueprintImplementableEvent, Category="Damage")
 	int CalledFromCpp();
