@@ -19,3 +19,11 @@
 
 # What it does
 This project doesn't do much -- it sets up interactions between Blueprints (considered the 'designer' land for UE) and C++ (read comments in ALearningActor01.h/cpp)
+
+# NOTES
+
+- UCLASS() — Used to tell Unreal to generate reflection data for a class. The class must derive from UObject.
+- USTRUCT() — Used to tell Unreal to generate reflection data for a struct.
+- GENERATED_BODY() — UE4 replaces this with all the necessary boilerplate code that gets generated for the type.
+- UPROPERTY() — Enables a member variable of a UCLASS or a USTRUCT to be used as a UPROPERTY. A UPROPERTY has many uses. It can allow the variable to be replicated, serialized, and accessed from Blueprints. They are also used by the garbage collector to keep track of how many references there are to a UObject.
+- UFUNCTION() — Enables a class method of a UCLASS or a USTRUCT to be used as a UFUNCTION. A UFUNCTION can allow the class method to be called from Blueprints and used as RPCs, among other things.
