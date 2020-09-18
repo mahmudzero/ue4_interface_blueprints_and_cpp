@@ -1,6 +1,11 @@
 # ue4_interface_blueprints_and_cpp
 ## Developed with macOS in mind
 ## 0.1 https://docs.unrealengine.com/en-US/Programming/Introduction/index.html
+## links
+- https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Classes/Specifiers/index.html
+- https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Properties/Specifiers/index.html
+- https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Functions/Specifiers/index.html
+- https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/index.html
 
 # Setup
 - Install Git-LFS (https://git-lfs.github.com)
